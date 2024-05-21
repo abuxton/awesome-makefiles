@@ -1,6 +1,6 @@
 # Makefile
 
-This repository is intended to create and manage collected Makefiles and the like (task, rake etc) and related useful resources
+This repository is intended to create and manage collected Makefiles and the like (task, rake etc) and related useful resources [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 * <https://opensource.com/article/18/8/what-how-makefile>
 * <https://makefiletutorial.com/>
