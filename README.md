@@ -1,47 +1,18 @@
-# makefile tutorial
+# Makefile tutorial
 
-This repository includes a makefile, the makefile is adaptable to any C or CPP project as easily. 
-The makefile generates an output for each source file, so when you change any source file, the GCC will recompile just which file that is changed and update the output.
+This repository is intended to create and manage colelcted makefile and the like (taskfiles etc)
 
-### Makefile magics:
+The root Makefile is to help with management of this repo
 
-step: dependencies_file dependencies_steps
+## Usage
 
-| macro | explanation |
-|-|-|
-| $@ | step's definition name |
-| $? | step's all dependencies |
-| $< | step's just file dependencies | 
+``` shell
 
-### makefile
+# git clone this repo of you can clone a file directly
+wget https://raw.githubusercontent.com/abuxton/awesome-makefiles/main/makefile
 
-    CC       =  gcc
-    CFLAGS   =  -g -Wall -I.
-    SRCDIR   =  src
-    OBJDIR   =  obj
-    BINDIR   =  bin
+curl -O https://raw.githubusercontent.com/abuxton/awesome-makefiles/main/makefile
 
-    SOURCES  = $(shell find $(SRCDIR) -type f -name '*.c') # main.c say_hello.c
-    OBJECTS  = $(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(SOURCES:.c=.o)) # main.o say_hello.o
-    DEPS     = $(OBJECTS:.o=.d)
-    BINARY   = $(BINDIR)/Program.bin
-    #-include $(DEPS)
 
-    all: buildsolution
-
-    buildsolution: dir $(BINARY)
-
-    dir:
-        mkdir -p $(OBJDIR)
-        mkdir -p $(BINDIR)
-
-    $(BINARY): $(OBJECTS)
-        $(CC) $(CFLAGS) $^ -o $@
-
-    $(OBJDIR)/%.o: $(SRCDIR)/%.c
-        $(CC) $(CFLAGS) -c -MMD -MP -o $@ $<
-
-    clean:
-        echo "clean runing..."
-
+```
 
