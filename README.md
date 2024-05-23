@@ -3,7 +3,7 @@
 This repository is intended to create and manage collected Makefiles and the like (task, rake etc) and related useful resources [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 * <https://opensource.com/article/18/8/what-how-makefile>
-* * <https://makefiletutorial.com/>
+  * <https://makefiletutorial.com/>
   * <https://github.com/krisnova/Makefile/blob/main/Makefile>
 * <https://taskfile.dev/>
 * <https://ruby.github.io/rake/doc/rakefile_rdoc.html>
