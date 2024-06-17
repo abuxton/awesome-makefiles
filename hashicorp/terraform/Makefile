@@ -32,6 +32,9 @@ docs: ## populate README.md with terraform-docs
 # requires https://terraform-docs.io/
 	terraform-docs markdown table --output-file README.md .
 
+vars: ## populate tfvars with terraform-docs output
+# requires https://terraform-docs.io/
+	terraform-docs tfvars .
 terraform-override: ## override provided file
 	cp ./$(file) $(basename $(file))_override.tf
 
