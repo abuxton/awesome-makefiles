@@ -9,14 +9,15 @@ login: ## login to terraform application service
 
 init: ## terraform init
 	terarform init
-module: ## generate a base terraform module
-	touch ./main.tf
-	touch ./variables.tf
-	touch ./outputs.tf
-	touch ./terraform.tf
-	touch ./backend.tf
-	touch ./README.md
-	touch ./.gitignore
+module: ## generate a base terraform module `path="."` is the default arg.
+	path="."
+	touch ${path}/main.tf
+	touch ${path}/variables.tf
+	touch ${path}/outputs.tf
+	touch ${path}/terraform.tf
+	touch ${path}/backend.tf
+	touch ${path}/README.md
+	touch ${path}/.gitignore
 plan: ## terraform plan
 	terraform plan
 apply: ## terraform apply
