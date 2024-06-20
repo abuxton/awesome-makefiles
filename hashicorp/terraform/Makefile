@@ -7,8 +7,6 @@ all: help
 login: ## login to terraform application service
 	terraform login
 
-init: ## terraform init
-	terarform init
 module: ## generate a base terraform module `path="."` is the default arg.
 	path="."
 	touch ${path}/main.tf
@@ -18,11 +16,13 @@ module: ## generate a base terraform module `path="."` is the default arg.
 	touch ${path}/backend.tf
 	touch ${path}/README.md
 	touch ${path}/.gitignore
-plan: ## terraform plan
-	terraform plan
+
+plan: ## terraform init & plan
+	terraform init
+        terraform plan
+
 apply: ## terraform apply
 	terraform init
-	terraform plan
 	terraform apply
 
 destroy: ## terraform destroy
@@ -36,7 +36,13 @@ vars: ## populate tfvars with terraform-docs output
 # requires https://terraform-docs.io/
 	terraform-docs tfvars hcl .
 
-terraform-override: ## override provided file
+validate ## terraform fmt & validate
+# add lint at somepoint
+	terraform init
+	terraform fmt
+	terraform validate
+
+terraform-override: ## override provided ./filename.tf
 	cp ./$(file) $(basename $(file))_override.tf
 
 .PHONY: help
