@@ -30,7 +30,7 @@ destroy: ## terraform destroy
 
 docs: ## populate README.md with terraform-docs
 # requires https://terraform-docs.io/
-	terraform-docs markdown table --output-file README.md .
+	terraform-docs markdown table --hide-empty --sort-by=required --lockfile=false --output-file README.md .
 
 vars: ## populate tfvars with terraform-docs output
 # requires https://terraform-docs.io/
