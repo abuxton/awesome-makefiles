@@ -4,8 +4,9 @@
 
 all: help
 
-login: ## login to terraform application service
-	terraform login
+login: ## login to terraform application service $hotname=app.terraform.io is default
+	hostname="app.terraform.io"
+	terraform login $hostname
 
 module: ## generate a base terraform module `path="."` is the default arg.
 	path="."
@@ -36,7 +37,7 @@ vars: ## populate tfvars with terraform-docs output
 # requires https://terraform-docs.io/
 	terraform-docs tfvars hcl .
 
-validate ## terraform fmt & validate
+validate: ## terraform fmt & validate
 # add lint at somepoint
 	terraform init
 	terraform fmt
