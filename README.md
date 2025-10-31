@@ -6,6 +6,7 @@ This repository is intended to create and manage collected Makefiles and the lik
   * <https://makefiletutorial.com/>
   * <https://github.com/krisnova/Makefile/blob/main/Makefile>
   * <https://github.com/michaelfromyeg/makefiles>
+  * <https://github.com/amjadmajid/Makefile>
 * <https://taskfile.dev/>
 * <https://ruby.github.io/rake/doc/rakefile_rdoc.html>
 
