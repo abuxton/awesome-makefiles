@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
+cat <<EOF
+terraform {
+  cloud {
+    organization = "hashicorp-advanced-services"
+
+    workspaces {
+      name = "<>"
+    }
+  }
+}
+
+
+EOF
