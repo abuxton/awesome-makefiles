@@ -21,10 +21,9 @@ wget https://raw.githubusercontent.com/abuxton/awesome-makefiles/main/makefile
 
 curl -O https://raw.githubusercontent.com/abuxton/awesome-makefiles/main/makefile
 
-
 ```
 
-## tools && helpers
+## tools && helpers
 
 - <https://crates.io/crates/make-makefile>
 
