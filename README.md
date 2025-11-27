@@ -24,3 +24,7 @@ curl -O https://raw.githubusercontent.com/abuxton/awesome-makefiles/main/makefil
 
 ```
 
+## tools && helpers
+
+- <https://crates.io/crates/make-makefile>
+
