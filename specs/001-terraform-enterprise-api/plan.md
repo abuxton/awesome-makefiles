@@ -9,14 +9,14 @@ Create a comprehensive Makefile-based CLI for Terraform Enterprise/HCP Terraform
 
 ## Technical Context
 
-**Language/Version**: GNU Make 3.81+, Bash 4.0+  
-**Primary Dependencies**: curl (REST API client), jq (JSON processor), git (repository operations)  
-**Storage**: N/A (stateless API client)  
-**Testing**: Manual testing with real TFE/HCP account, shellcheck for script validation  
-**Target Platform**: macOS, Linux (any POSIX-compliant system with bash)  
-**Project Type**: Single Makefile with helper scripts  
-**Performance Goals**: <500ms per API call (network dependent), respect 30 req/s rate limit  
-**Constraints**: JSON API spec compliance, no secrets in code, environment variable-based config  
+**Language/Version**: GNU Make 3.81+, Bash 4.0+
+**Primary Dependencies**: curl (REST API client), jq (JSON processor), git (repository operations)
+**Storage**: N/A (stateless API client)
+**Testing**: Manual testing with real TFE/HCP account, shellcheck for script validation
+**Target Platform**: macOS, Linux (any POSIX-compliant system with bash)
+**Project Type**: Single Makefile with helper scripts
+**Performance Goals**: <500ms per API call (network dependent), respect 30 req/s rate limit
+**Constraints**: JSON API spec compliance, no secrets in code, environment variable-based config
 **Scale/Scope**: ~30 Makefile targets covering 6 user stories, support for unlimited workspaces/runs
 
 ## Constitution Check

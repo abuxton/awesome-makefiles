@@ -1,8 +1,8 @@
 # Feature Specification: Terraform Enterprise API Makefile
 
-**Feature Branch**: `001-terraform-enterprise-api-makefile`  
-**Created**: 2026-01-15  
-**Status**: Draft  
+**Feature Branch**: `001-terraform-enterprise-api-makefile`
+**Created**: 2026-01-15
+**Status**: Draft
 **Input**: Create a Makefile implementation for Terraform Enterprise/HCP Terraform API interactions using curl
 
 ## User Scenarios & Testing *(mandatory)*
