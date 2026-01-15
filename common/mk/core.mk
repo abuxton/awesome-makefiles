@@ -10,6 +10,7 @@ all: help help-git
 
 
 -include ${REPO_TOP}/common/bin/git.mk
+-include ${REPO_TOP}/rust/bin/rust.mk
 
 .PHONY: help
 help:  ## Show help messages for make targets
