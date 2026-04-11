@@ -1,0 +1,45 @@
+{
+  "version": "1",
+  "skills": {
+    "makefile-basics": {
+      "source": "local",
+      "path": "skills/makefile-basics/SKILL.md",
+      "description": "Core GNU Make concepts, syntax, and best practices"
+    },
+    "makefile-patterns": {
+      "source": "local",
+      "path": "skills/makefile-patterns/SKILL.md",
+      "description": "Common reusable Makefile patterns and idioms"
+    },
+    "makefile-debugging": {
+      "source": "local",
+      "path": "skills/makefile-debugging/SKILL.md",
+      "description": "Debugging, tracing, and troubleshooting Makefiles"
+    },
+    "makefile-ci": {
+      "source": "local",
+      "path": "skills/makefile-ci/SKILL.md",
+      "description": "CI/CD integration with Makefiles"
+    },
+    "makefile-docker": {
+      "source": "local",
+      "path": "skills/makefile-docker/SKILL.md",
+      "description": "Docker build, tag, push, and compose targets"
+    },
+    "makefile-golang": {
+      "source": "local",
+      "path": "skills/makefile-golang/SKILL.md",
+      "description": "Go project Makefile targets"
+    },
+    "makefile-python": {
+      "source": "local",
+      "path": "skills/makefile-python/SKILL.md",
+      "description": "Python project Makefile targets"
+    },
+    "makefile-nodejs": {
+      "source": "local",
+      "path": "skills/makefile-nodejs/SKILL.md",
+      "description": "Node.js project Makefile targets"
+    }
+  }
+}
